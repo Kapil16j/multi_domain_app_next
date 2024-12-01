@@ -8,7 +8,6 @@ export function middleware(request) {
   const port = url.port || '80';  // Default to port 80 if port is not available
   console.log("url????", url, port, host);
 
-  // Check if the current URL is already the target URL
   const currentPath = request.nextUrl.pathname;
 
   // Define domain-specific routing logic
