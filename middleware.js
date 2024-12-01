@@ -11,6 +11,8 @@ export function middleware(request) {
   // https://multi-domain-app-next.vercel.app/
   // https://multi-domain-app-next-kapils-projects-9c8b1734.vercel.app/
   // Define domain-specific routing logic
+
+  
   if (port === 'https://multi-domain-app-next.vercel.app/' ) {
     console.log("Redirecting to /university");
     return NextResponse.redirect(new URL('/university', request.nextUrl));
