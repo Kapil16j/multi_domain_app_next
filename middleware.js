@@ -12,14 +12,20 @@ export function middleware(request) {
   // https://multi-domain-app-next-kapils-projects-9c8b1734.vercel.app/
   // Define domain-specific routing logic
 
-  
-  if (port === 'https://multi-domain-app-next.vercel.app/' ) {
+
+  if (host === 'multi-domain-app-next.vercel.app' ) {
     console.log("Redirecting to /university");
     return NextResponse.redirect(new URL('/university', request.nextUrl));
-  }else if (port === 'https://multi-domain-app-next-kapils-projects-9c8b1734.vercel.app/') {
+    
+  }else if (host === 'multi-domain-app-next-kapils-projects-9c8b1734.vercel.app') {
     console.log("Redirecting to /colleges");
     return NextResponse.redirect(new URL('/colleges', request.nextUrl));
   }
+  else if (host === 'multi-domain-app-next-kwkfxmvw8-kapils-projects-9c8b1734.vercel.app') {
+    console.log("Redirecting to /colleges");
+    return NextResponse.redirect(new URL('/colleges', request.nextUrl));
+  }
+  
 
   console.log('No redirection, allowing request to proceed.');
   return NextResponse.next();
