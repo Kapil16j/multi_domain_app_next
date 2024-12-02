@@ -85,11 +85,13 @@ export function middleware(request) {
   const host = request.headers.get('host'); // Get the domain name
   const currentPath = request.nextUrl.pathname;
 
+  console.log("currentPath???",currentPath)
+
   // Define domain-to-path mappings
   const domainToPathMap = {
     'multi-domain-app-next.vercel.app': '/university',
     'multi-domain-app-next-kapils-projects-9c8b1734.vercel.app': '/colleges',
-    'multi-domain-app-next-kwkfxmvw8-kapils-projects-9c8b1734.vercel.app': '/colleges',
+    'https://multi-domain-app-next-git-master-kapils-projects-9c8b1734.vercel.app/': '/',
   };
 
   // Exclude paths that shouldn't be restricted (e.g., API or other special folders)
