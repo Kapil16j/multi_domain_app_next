@@ -11,12 +11,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export default function Colleges() {
+export default function University() {
   return (
     <div
       className={`${geistSans.variable} ${geistMono.variable} grid place-items-center min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
     >
-      <h1 className="text-3xl font-bold">Welcome to Colleges</h1>
+      <h1 className="text-3xl font-bold">Welcome to University</h1>
     </div>
   );
 }
