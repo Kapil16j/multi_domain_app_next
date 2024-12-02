@@ -37,32 +37,60 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+       
+        
+        {/* Featured Universities Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mt-16">
+          <div className="flex flex-col rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800 transition-all">
+            {/* <Image
+              className="w-full h-48 object-cover"
+              src="/university1.jpg" // Replace with actual image source
+              alt="University 1"
+              width={500}
+              height={300}
+            /> */}
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                University of Excellence
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                A top-tier university offering world-class education and innovative research programs.
+              </p>
+              <a
+                href="#"
+                className="text-sm text-blue-600 hover:underline"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+
+          <div className="flex flex-col rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800 transition-all">
+            {/* <Image
+              className="w-full h-48 object-cover"
+              src="/university2.jpg" // Replace with actual image source
+              alt="University 2"
+              width={500}
+              height={300}
+            /> */}
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                Global College of Arts
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                A vibrant institution focused on creativity, arts, and culture, providing a platform for future artists.
+              </p>
+              <a
+                href="#"
+                className="text-sm text-blue-600 hover:underline"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
         </div>
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
