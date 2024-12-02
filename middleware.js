@@ -92,6 +92,12 @@ export function middleware(request) {
     'multi-domain-app-next-kwkfxmvw8-kapils-projects-9c8b1734.vercel.app': '/colleges',
   };
 
+  // Exclude paths that shouldn't be restricted (e.g., API or other special folders)
+  if (currentPath.startsWith('/api') || currentPath.startsWith('/static') || currentPath.startsWith('/_next')) {
+    console.log('Skipping middleware for API or special folders.');
+    return NextResponse.next();
+  }
+
   // Allow localhost to access any route
   if (host.startsWith('localhost')) {
     console.log('Allowing localhost to proceed.');
@@ -125,5 +131,6 @@ export function middleware(request) {
 export const config = {
   matcher: ['/', '/:path*'], // Match all routes
 };
+
 
 
