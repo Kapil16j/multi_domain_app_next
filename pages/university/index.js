@@ -85,7 +85,7 @@ export default function University() {
             </div>
             <div className="relative">
               <Image
-                src="/images/university.jpg" // Ensure the image is placed correctly in the public folder
+                src="/img/college.jpg" // Ensure the image is placed correctly in the public folder
                 alt="Chaudhary Devi Lal University"
                 width={700}
                 height={400}
