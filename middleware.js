@@ -145,8 +145,8 @@ export function middleware(request) {
 
   // Define domain-to-path mappings
   const domainToPathMap = {
-    'multi-domain-app-next.vercel.app': '/university',
-    'multi-domain-app-next-kapils-projects-9c8b1734.vercel.app': '/colleges',
+    'multi-domain-app-next.vercel.app': '/abscollege',
+    'multi-domain-app-next-kapils-projects-9c8b1734.vercel.app': '/ybscollege',
     'multi-domain-app-next-git-master-kapils-projects-9c8b1734.vercel.app': '/',
   };
 
